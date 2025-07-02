@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AirPods – Flamesells</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AirPods</h1>
+    <a href="index.html">← Home</a>
+  </header>
+  <main class="product-page">
+    <div class="product-card">
+      <img src="assets/airpods.jpg" alt="AirPods" />
+      <h2>AirPods</h2>
+      <p>$35</p>
+      <label>Quantity:
+        <input type="number" min="1" value="1" id="airpods-qty" />
+      </label>
+      <button onclick="addToCart('AirPods', 35, 'airpods-qty')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/airpods-max.jpg" alt="AirPods Max" />
+      <h2>AirPods Max</h2>
+      <p>$110</p>
+      <label>Quantity:
+        <input type="number" min="1" value="1" id="airpods-max-qty" />
+      </label>
+      <button onclick="addToCart('AirPods Max', 110, 'airpods-max-qty')">Add to Cart</button>
+    </div>
+  </main>
+</body>
+</html>

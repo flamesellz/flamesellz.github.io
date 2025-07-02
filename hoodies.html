@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoodies – Flamesells</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Hoodies</h1>
+    <a href="index.html">← Home</a>
+  </header>
+  <main class="product-page">
+    <div class="product-card out-of-stock">
+      <h2>Denim Tears Hoodie</h2>
+      <p>Out of Stock</p>
+    </div>
+    <div class="product-card">
+      <h2>Sp5der Hoodie</h2>
+      <label for="sp5der-color">Colorway:</label>
+      <select id="sp5der-color">
+        <option disabled selected>Choose a Colorway</option>
+        <option>Pink</option>
+        <option>Black</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Yellow</option>
+      </select>
+      <label for="sp5der-size">Size:</label>
+      <select id="sp5der-size">
+        <option disabled selected>Size</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+      <label>Quantity:
+        <input type="number" min="1" value="1" id="sp5der-qty" />
+      </label>
+      <p>$100</p>
+      <button onclick="addSp5derToCart()">Add to Cart</button>
+    </div>
+  </main>
+</body>
+</html>
